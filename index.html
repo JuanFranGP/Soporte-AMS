@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f1e8">
+    <meta name="description" content="Lúmina: café de especialidad, pan recién hecho y momentos para saborear sin prisa.">
+    <title>Lúmina — Café para saborear despacio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Lúmina, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>LÚMINA</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Abrir menú</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#historia">Nuestra historia</a>
+        <a href="#carta">La carta</a>
+        <a href="#visitanos">Encuéntranos</a>
+        <a class="nav-cta" href="#visitanos">Ven a vernos <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-image" role="img" aria-label="Una taza de café junto a una ventana con luz de mañana"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Café de especialidad · Madrid</p>
+          <h1>Un poco de<br><em>luz</em> en tu día.</h1>
+          <p class="hero-copy">Café bien hecho, pan recién salido del horno y tiempo para disfrutarlo.</p>
+          <a class="button button-light" href="#carta">Descubre la carta <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-dot"></span>
+          <span>Tu pausa favorita<br>te está esperando</span>
+        </div>
+        <div class="hero-index" aria-hidden="true">01 / 03</div>
+      </section>
+
+      <section class="intro section-wrap reveal" id="historia">
+        <p class="eyebrow eyebrow-dark">Hecho con intención</p>
+        <div class="intro-grid">
+          <h2>Los días saben<br>mejor <em>sin prisa.</em></h2>
+          <div class="intro-text">
+            <p>Creemos en las cosas sencillas, hechas con cariño. Un buen grano, manos expertas y una mesa donde siempre cabe alguien más.</p>
+            <a class="text-link" href="#visitanos">Un café, muchas historias <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="stats">
+          <div><strong>100%</strong><span>café de origen</span></div>
+          <div><strong>8:00</strong><span>abrimos cada mañana</span></div>
+          <div><strong>∞</strong><span>ganas de verte</span></div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="carta">
+        <div class="section-wrap menu-inner reveal">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow eyebrow-dark">Pequeños grandes placeres</p>
+              <h2>De nuestra <em>barra</em></h2>
+            </div>
+            <a class="text-link" href="#visitanos">Ver carta completa <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-photo photo-coffee" role="img" aria-label="Café espresso recién preparado"></div>
+              <div class="menu-card-copy"><span>01 — EL DE SIEMPRE</span><h3>Espresso doble</h3><p>Intenso, dulce y con notas de chocolate.</p><strong>2,80 €</strong></div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-photo photo-latte" role="img" aria-label="Latte con arte en la espuma"></div>
+              <div class="menu-card-copy"><span>02 — UN ABRAZO</span><h3>Latte de avena</h3><p>Suave, cremoso y hecho a tu manera.</p><strong>4,20 €</strong></div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-photo photo-pastry" role="img" aria-label="Bollería artesanal recién horneada"></div>
+              <div class="menu-card-copy"><span>03 — RECIÉN HECHO</span><h3>Roll de canela</h3><p>Masa tierna, canela y glaseado casero.</p><strong>3,50 €</strong></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit-section section-wrap reveal" id="visitanos">
+        <div class="visit-image" role="img" aria-label="Rincón acogedor de la cafetería"></div>
+        <div class="visit-copy">
+          <p class="eyebrow eyebrow-dark">Siempre hay sitio</p>
+          <h2>Nos vemos<br><em>en Lúmina.</em></h2>
+          <p>En el corazón de Madrid, en esa esquina donde el sol se queda un ratito más.</p>
+          <div class="visit-details">
+            <span><strong>Dirección</strong> Calle del Pez, 18 · Malasaña</span>
+            <span><strong>Horario</strong> L–V, 8:00–19:00 · S–D, 9:00–20:00</span>
+          </div>
+          <a class="button button-dark" href="https://maps.google.com/?q=Calle+del+Pez+18+Madrid" target="_blank" rel="noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="clock-widget" aria-label="Reloj local">
+      <span class="clock-caption">HORA LOCAL</span>
+      <div class="analog-clock" role="img" aria-label="Reloj analógico">
+        <span class="clock-hand clock-hour"></span>
+        <span class="clock-hand clock-minute"></span>
+        <span class="clock-hand clock-second"></span>
+        <span class="clock-pin"></span>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✳</span><span>LÚMINA</span></a>
+      <p>Un café y el mundo puede esperar.</p>
+      <span>© <span id="current-year"></span> Lúmina Café</span>
+    </footer>
+  </body>
+</html>
