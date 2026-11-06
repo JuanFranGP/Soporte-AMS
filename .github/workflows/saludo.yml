@@ -1,0 +1,13 @@
+name: Saludo
+
+on:
+  push:
+
+permissions: {}
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar al equipo
+        run: echo "Hola, equipo! Bienvenidos al proyecto."
